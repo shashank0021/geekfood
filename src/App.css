@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #555;
+
+    overflow: hidden; /* Ensure no overflow from the container */
+}
+
+.container img {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
+
+.container .nav-links ul {
+    display: flex;
+    /* gap: 2rem; */
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+
+
+ul #Home {
+    color: dodgerblue;
+}
+
+.container button {
+    background-color: rgb(15, 117, 219);
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.back {
+    background-image: url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    padding: 15rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  
+ overflow: none;
+}
+
+.back h1 {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 900;
+}
+
+.back h2 {
+    color: rgb(151, 10, 10);
+    font-size: 2.5rem;
+    
+    font-weight: 800;
+}
+
+.back p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.back .btns button {
+    margin-right: 1rem;
+    margin-top: 20px;
+}
+
+.back .red {
+    background-color: rgb(193, 10, 10);
+    padding: 15px 34px;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.back .white {
+    background-color: white;
+    color: black;
+    padding: 15px 34px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+
+/* section1 */
+.sections {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh; /* Ensure sections take full height */
+    flex-direction: row; /* Default to row for larger screens */
+}
+
+.secImg {
+    flex: 1; /* Allow image section to grow */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.secImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure image covers the section */
+}
+
+.right-par {
+    background-color: rgb(226, 234, 234);
+    flex: 1; /* Allow right section to grow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.right {
+    padding: 50px 80px;
+    max-width: 1000px; /* Limit the content width */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.right h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.right p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.right button {
+    background-color: rgb(23, 15, 177);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.5s ease-in;
+}
+
+.right button:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .sections {
+        flex-direction: column; /* Stack sections vertically */
+        height: auto; /* Adjust height for better fit */
+        padding: 20px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+
+    .right h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .right p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .right button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .sections {
+        flex-direction: column; /* Stack sections vertically */
+        height: auto; /* Adjust height for better fit */
+        padding: 30px;
+    }
+
+    .right {
+        padding: 30px 50px;
+    }
+
+    .right h2 {
+        font-size: 1.75rem;
+        margin-bottom: 25px;
+    }
+
+    .right p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .right button {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media (min-width: 1025px) {
+    .sections {
+        flex-direction: row; /* Default to row for larger screens */
+        height: 80vh; /* Ensure sections take full height */
+        padding: 50px;
+    }
+
+    .right {
+        padding: 50px 80px;
+    }
+
+    .right h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .right p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .right button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+
+/* gridsections */
+/* 
+.grid-section{
+    display: grid;
+    gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 120px;
+  border: 2px solid red;
+width: 100%;
+height: 100vh;
+padding: 8rem;
+}
+.grid-section img{
+    width: 50px;
+    border-radius: 50px;
+}
+.grid-text{
+    background-color: #fff;
+ 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow:  2px 2px 4px 2px rgba(0, 0, 0, 0.2) ;
+}
+.grid-text p{
+    line-height: 1.5;
+
+}
+.grid-img{
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+
+}
+.divs{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 20px;
+} 
+.grid-section .one{
+  
+} */
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap between the grid items */
+    padding: 20px; /* Adjust the padding around the grid */
+}
+
+.grid-content {
+    background: #fff; /* Adjust the background color of the grid items */
+    border-radius: 8px; /* Add border radius to the grid items */
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); /* Add box shadow for a subtle effect */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.grid-content.one {
+    grid-column: span 2; /* Make the first item span 2 columns */
+    grid-row: span 2; /* Make the first item span 2 rows */
+}
+
+.grid-text {
+    padding: 20px;
+}
+
+.divs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.grid-img {
+    flex: 1;
+}
+
+.grid-img img {
+    width: 50px;
+    border-radius: 50px;
+    height: auto;
+    border-radius: 8px; /* Add border radius to images */
+}
+
+.grids {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .grid-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto); /* Allow rows to adjust based on content */
+    }
+
+    .grid-content.one {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .grid-content.one {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1025px) {
+    .grid-section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .grid-content.one {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .grid-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto); /* Allow rows to adjust based on content */
+    }
+
+    .grid-content.one {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .grid-content.one {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+
+
+.footer {
+    background-color: rgb(243, 244, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    padding: 20px; /* Added padding for better spacing on smaller screens */
+}
+
+.footer .footer-content .p {
+    color: rgb(141, 225, 197);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer .lorem {
+    margin-bottom: 1.5rem;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap; /* Allow wrapping for better fit on smaller screens */
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    margin: 15px 10px;
+    padding: 15px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Change to your desired hover color */
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .footer {
+        height: auto; /* Adjust height for better fit */
+        padding: 10px;
+    }
+
+    .footer .footer-content .p {
+        font-size: 1.2rem;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    .social-links a {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .footer {
+        height: auto; /* Adjust height for better fit */
+        padding: 15px;
+    }
+
+    .footer .footer-content .p {
+        font-size: 1.3rem;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    .social-links a {
+        margin: 12px 8px;
+        padding: 12px;
+    }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 769px) {
+    .footer {
+        height: 50vh;
+    }
+
+    .footer ul {
+        flex-direction: row;
+    }
+
+    .social-links a {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .sections {
+        flex-direction: column;
+        height: auto; /* Let the sections adjust their height */
+        padding: 20px;
+    }
+
+    .secImg,
+    .right-par {
+        flex: none; /* Remove flex grow */
+        width: 100%;
+        height: 50vh; /* Adjust height */
+    }
+
+    .right-par {
+        padding: 20px;
+    }
+
+    .right {
+        padding: 20px;
+        max-width: 100%; /* Allow content to fill the section */
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .back {
+        padding: 2rem;
+        height: auto;
+    }
+
+    .back h1,
+    .back h2,
+    .back p {
+        text-align: center;
+    }
+
+    .back .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back .btns button {
+        margin: 10px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .back {
+        padding: 1rem;
+    }
+
+    .back h1 {
+        font-size: 2rem;
+    }
+
+    .back h2 {
+        font-size: 1.5rem;
+    }
+
+    .back p {
+        font-size: 1rem;
+    }
+
+    .back .btns button {
+        margin: 10px 0;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+  }
+
+
+
+
+  /* Quote*/
+
+
+
+  
+/* hero_section */
+/* Hero.css */
+.hero-container {
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 800px) {
+    .nav-links a {
+        display: none;
+    }
+
+    .footer {
+        height: auto; /* Adjust height for better fit */
+        padding: 10px;
+    }
+
+    .footer .footer-content .p {
+        font-size: 1.2rem;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    .social-links a {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .footer {
+        height: auto; /* Adjust height for better fit */
+        padding: 15px;
+    }
+
+    .footer .footer-content .p {
+        font-size: 1.3rem;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    .social-links a {
+        margin: 12px 8px;
+        padding: 12px;
+    }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 769px) {
+    .footer {
+        height: 50vh;
+    }
+
+    .footer ul {
+        flex-direction: row;
+    }
+
+    .social-links a {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+}
+
+
+
+
+ 
+
+
+
+  
